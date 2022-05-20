@@ -20,7 +20,8 @@ let randomPhrase = () => {
     let word1Index = Math.floor(Math.random()*firstPart.length);
     let word2Index = Math.floor(Math.random()*secondPart.length);
     let word3Index = Math.floor(Math.random()*thirdPart.length);
-    return `${firstPart[word1Index]} ${secondPart[word2Index]} ${thirdPart[word3Index]}`
+    let message = `${firstPart[word1Index]} ${secondPart[word2Index]} ${thirdPart[word3Index]}`;
+    return message
 }
 
 console.log(randomPhrase());
